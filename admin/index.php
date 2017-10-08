@@ -82,15 +82,17 @@
         </nav>
         <!-- Main -->
         <main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
-          <h1>Dashboard</h1>
-             <h3>Employee Clock In/Out</h3>
+          <h1 class="text-center">Employee Dashboard</h1>
+             <!-- <h3>Employee Clock In/Out</h3> -->
 
               <form class="form-signin">
-              <h2 class="form-signin-heading">Please sign in</h2>
+              <h2 class="form-signin-heading text-center">12:10 am</h2>
+              <h2 class="form-signin-heading text-center">10/8/2017</h2>
+              <hr>
               <label for="inputID" class="sr-only">Employee ID#</label>
-              <input type="id" id="inputID" class="form-control" placeholder="Employee ID#" required autofocus>
+              <input type="id" id="inputID" class="form-control" placeholder="Employee ID #" required autofocus>
               <label for="inputPin" class="sr-only">Pin</label>
-              <input type="pin" id="inputPin" class="form-control" placeholder="Pin" required>
+              <input type="password" id="inputPin" class="form-control" placeholder="Pin" required>
               <button class="btn btn-lg btn-dark btn-block" type="submit">Clock In</button>
               <button class="btn btn-lg btn-dark btn-block" type="submit">Clock Out</button>
             </form>
