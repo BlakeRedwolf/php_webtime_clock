@@ -1,0 +1,19 @@
+{
+  "name": "php_webtime_clock",
+  "version": "1.0.0",
+  "description": "Easy to use web based time keeping solution, with roles, groups, employees, clock in &amp; clock out time stamps, payroll, and advanced sorting features. Built with PHP, JS, Bootstrap, and JQuery.",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlakeRedwolf/php_webtime_clock.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlakeRedwolf/php_webtime_clock/issues"
+  },
+  "homepage": "https://github.com/BlakeRedwolf/php_webtime_clock#readme"
+}
