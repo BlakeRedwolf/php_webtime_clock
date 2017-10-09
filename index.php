@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="icon" href="../../../../favicon.ico">
+        <link rel="icon" href="../../favicon.ico">
 
     <title>PHP Timeclock</title>
 
@@ -52,139 +52,215 @@
         <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link disabled" href="#"><b>Users</b> <span class="sr-only">(current)</span></a>
+              <a class="nav-link active" href="#">Overview <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">User Summary</a>
+              <a class="nav-link" href="#">Reports</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Create New User</a>
+              <a class="nav-link" href="#">Analytics</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">User Search</a>
+              <a class="nav-link" href="#">Export</a>
             </li>
           </ul>
 
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link disabled" href="#"><b>Offices</b></a>
+              <a class="nav-link" href="#">Nav item</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Office Summary</a>
+              <a class="nav-link" href="#">Nav item again</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Create New Office</a>
+              <a class="nav-link" href="#">One more nav</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Another nav item</a>
             </li>
           </ul>
-
-          <ul class="nav nav-pills flex-column">
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#"><b>Groups</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Group Summary</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Create New Group</a>
-            </li>
-          </ul>
-
-          <ul class="nav nav-pills flex-column">
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#"><b>In/Out Status</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Status Summary</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Create Status</a>
-            </li>
-          </ul>
-
-          <ul class="nav nav-pills flex-column">
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#"><b>Admin Actions</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Add/Edit/Delete Time</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Edit System Settings</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Database Settings</a>
-            </li>
-          </ul>
-
         </nav>
         <!-- Main -->
-        <main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
-          <h1>Admin Dashboard</h1>
-             <h3>System Settings</h3>
-              <p>Below are the settings that have been chosen within your config.inc.php file.</p>
+        <main class="col-sm-9 ml-sm-auto col-md-10 col-lg-12 pt-3" role="main">
+          <h1 class="text-center">Employee Dashboard</h1>
+             <!-- <h3>Employee Clock In/Out</h3> -->
+            <div class="row">
+              <div class="col-md-12">
+              <form class="form-signin">
 
-          <!-- <h4>Heading</h4> -->
+                <div class="form-group" style="width: 30%; display: block; margin:auto;">
+                  
+              <h2 class="form-signin-heading text-center">12:10 am</h2>
+              <h2 class="form-signin-heading text-center">10/8/2017</h2>
+              <hr>
+              <label for="inputID" class="sr-only">Employee ID#</label>
+              <input type="id" id="inputID" class="form-control" placeholder="Employee ID #" required autofocus>
+              <label for="inputPin" class="sr-only">Pin</label>
+              <input type="password" id="inputPin" class="form-control" placeholder="Pin" required>
+              <button class="btn btn-lg btn-dark btn-block" type="submit">Clock In</button>
+              <button class="btn btn-lg btn-dark btn-block" type="submit">Clock Out</button>
+              </div>
+            </form>
+              </div>
+            </div>
+
+
+          <!-- <h4>Heading</h4>
           <div class="table-responsive">
-            <table class="table table-responsive table-dark">
-            <thead>
-                <tr>
-                  <th>VARIABLE</th>
-                  <th>VALUE</th>
-                  <th>DESCRIPTION</th>
-                </tr>
-              </thead>
+            <table class="table table-striped">
               <thead>
                 <tr>
-                  <th>MySQL Settings</th>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>In/Out</th>
+                  <th>Time</th>
+                  <th>Date</th>
+                  <th>Group</th>
+                  <th>Notes</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>db_hostname:</td>
-                  <td>localhost</td>
-                  <td>Hostname for your mysql server. Default='localhost'</td>
+                  <td>23456</td>
+                  <td>Lorem</td>
+                  <td>In</td>
+                  <td>10:11am</td>
+                  <td>10/7/2017</td>
+                  <td>Marketing</td>
+                  <td>I have a 10 year old son. He has words. He is so good with these words it's
+unbelievable.</td>
                 </tr>
                 <tr>
-                  <td>db_name</td>
-                  <td>timeclock</td>
-                  <td>Name of your mysql database</td>
+                  <td>23456</td>
+                  <td>amet</td>
+                  <td>In</td>
+                  <td>10:11am</td>
+                  <td>10/7/2017</td>
+                  <td>Marketing</td>
+                  <td>You could see there was text coming out of her eyes, text coming out of her
+wherever. You’re disgusting. You have so many different things placeholder text
+has to be able to do, and I don't believe Lorem Ipsum has the stamina.</td>
                 </tr>
                 <tr>
-                  <td>db_username</td>
-                  <td>admin</td>
-                  <td>Administrator username. *Administrator has all rights by default*</td>
+                  <td>23456</td>
+                  <td>Integer</td>
+                  <td>Out</td>
+                  <td>10:11am</td>
+                  <td>10/7/2017</td>
+                  <td>Marketing</td>
+                  <td>Look at these words. Are they small words? And he referred to my words - if
+they're small, something else must be small. I guarantee you there's no problem,
+I guarantee. Lorem Ipsum best not make any more threats to your website.</td>
                 </tr>
                 <tr>
-                  <td>db_password</td>
-                  <td>********</td>
-                  <td>Administrator password. Default='password'</td>
+                  <td>23456</td>
+                  <td>libero</td>
+                  <td>Out</td>
+                  <td>10:11am</td>
+                  <td>10/7/2017</td>
+                  <td>Marketing</td>
+                  <td>Lorem Ipsum is the single greatest threat. We are not - we are not keeping up
+with other websites. I have a 10 year old son. He has words. He is so good with
+these words it's unbelievable.</td>
                 </tr>
                 <tr>
-                  <td>dbversion</td>
-                  <td>1.0</td>
-                  <td>The version of the current database for the PHP Timeclock application</td>
+                  <td>23456</td>
+                  <td>dapibus</td>
+                  <td>In</td>
+                  <td>10:11am</td>
+                  <td>10/7/2017</td>
+                  <td>Marketing</td>
+                  <td>I know words. I have the best words. We have so many things that we have to do
+better... and certainly ipsum is one of them.</td>
+                </tr>
+                <tr>
+                  <td>23456</td>
+                  <td>Nulla</td>
+                  <td>In</td>
+                  <td>10:11am</td>
+                  <td>10/7/2017</td>
+                  <td>Marketing</td>
+                  <td>You’re disgusting. The concept of Lorem Ipsum was created by and for the Chinese
+in order to make U.S. design jobs non-competitive. Look at that text! Would
+anyone use that? Can you imagine that, the text of your next webpage?!Employee notes:</td>
+                </tr>
+                <tr>
+                  <td>23456</td>
+                  <td>nibh</td>
+                  <td>In</td>
+                  <td>10:11am</td>
+                  <td>10/7/2017</td>
+                  <td>Marketing</td>
+                  <td>I don't think anybody knows it was Russia that wrote Lorem Ipsum, but I don't
+know, maybe it was. It could be Russia, but it could also be China.
+</td>
+                </tr>
+                <tr>
+                  <td>23456</td>
+                  <td>sagittis</td>
+                  <td>Out</td>
+                  <td>10:11am</td>
+                  <td>10/7/2017</td>
+                  <td>Marketing</td>
+                  <td>You know, it really doesn’t matter what you write as long as you’ve got a young,
+and beautiful, piece of text.</td>
+                </tr>
+                <tr>
+                  <td>23456</td>
+                  <td>Fusce</td>
+                  <td>Out</td>
+                  <td>10:11am</td>
+                  <td>10/7/2017</td>
+                  <td>Marketing</td>
+                  <td>I think the only difference between me and the
+other placeholder text is that I’m more honest and my words are more beautiful.</td>
+                </tr>
+                <tr>
+                  <td>23456</td>
+                  <td>augue</td>
+                  <td>In</td>
+                  <td>10:11am</td>
+                  <td>10/7/2017</td>
+                  <td>Marketing</td>
+                  <td> It could
+also be lots of other people. It also could be some wordsmith sitting on their
+bed that weights 400 pounds. Ok? </td>
+                </tr>
+                <tr>
+                  <td>23456</td>
+                  <td>massa</td>
+                  <td>Out</td>
+                  <td>10:11am</td>
+                  <td>10/7/2017</td>
+                  <td>Marketing</td>
+                  <td>Lorem Ipsum is FAKE TEXT! You know, it really doesn’t matter what you write as
+long as you’ve got a young, and beautiful, piece of text. </td>
+                </tr>
+                <tr>
+                  <td>23456</td>
+                  <td>eget</td>
+                  <td>In</td>
+                  <td>10:11am</td>
+                  <td>10/7/2017</td>
+                  <td>Marketing</td>
+                  <td>It’s about making
+placeholder text great again. That’s what people want, they want placeholder
+text to be great again.</td>
+                </tr>
+                <tr>
+                  <td>23456</td>
+                  <td>taciti</td>
+                  <td>Out</td>
+                  <td>10:11am</td>
+                  <td>10/7/2017</td>
+                  <td>Marketing</td>
+                  <td>He’s not a word hero. He’s a word hero because he was captured. I like text that
+wasn’t captured. </td>
                 </tr>
               </tbody>
-              <thead>
-                <tr>
-                  <th>Passwords</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>use_passwd:</td>
-                  <td>yes</td>
-                  <td>This provides the option for the users to input their password when individually punching in/out. Default='no'</td>
-                </tr>
-                <tr>
-                  <td>use_reports_password</td>
-                  <td>no</td>
-                  <td>If ALL users need access to ALL reports provided, then set this to 'no'. Default='no'</td>
-                </tr>
-              </tbody>
-
             </table>
-          </div>
+          </div> -->
+
         </main>
       </div>
     </div>

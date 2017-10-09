@@ -15,7 +15,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/sb_admin.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
 
 </head>
 
@@ -36,6 +36,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Reports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Logout</a>
           </li>
         </ul>
 
